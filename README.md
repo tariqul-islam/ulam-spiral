@@ -18,5 +18,5 @@ x will have the x co-ordinates, and y will have the y co-ordinates.
 can be used with MATLAB plot function. The plot is obtained only in the first qudrant.
 
 -Tariqul Islam Ponir
-ponir.bd@hotmail.com
+ponir.bd @ hotmail.com
 :)
