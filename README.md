@@ -20,6 +20,14 @@ x will have the x co-ordinates, and y will have the y co-ordinates.
 
 can be used with MATLAB plot function. The plot is obtained only in the first qudrant.
 
+(3)
+
+coor = ulam_spiral(N,fname)
+
+[x,y] = ulam_spiral(N,fname)
+
+Will do the same as above. Additionally it will save a JPEG file having the name fname. The function doesn't require extension in the fname. Extension will be automatically added.
+
 -Tariqul Islam Ponir
 
 ponir.bd @ hotmail.com
