@@ -1,26 +1,25 @@
-%{
-ULAM_SPIRAL
-get the co-ordinates of ulam spiral the points upto N*N
-more on ulam spiral here: http://en.wikipedia.org/wiki/Ulam_spiral
+%ULAM_SPIRAL
+%get the co-ordinates of ulam spiral the points upto N*N
+%more on ulam spiral here: http://en.wikipedia.org/wiki/Ulam_spiral
+%
+%coor = ulam_spiral(N)
+%will give a 2 row vector output which contains the co-ordinates of
+%the primes in the ulam spiral. The first row gives all the x co-ordinates
+%and second row gives all the y co-ordinates
+%
+%[x,y] = ulam_spiral(N);
+%x will have the x co-ordinates, and y will have the y co-ordinates.
+%
+%coor = ulam_spiral(N,fname)
+%[x,y] = ulam_spiral(N,fname)
+%Will do the same as above. Additionally it will save a JPEG file having the
+%name fname. The function doesn't require extension in the fname. Extension
+%will be automatically added.
 
-coor = ulam_spiral(N)
-will give a 2 row vector output which contains the co-ordinates of
-the primes in the ulam spiral. The first row gives all the x co-ordinates
-and second row gives all the y co-ordinates
-
-[x,y] = ulam_spiral(N);
-x will have the x co-ordinates, and y will have the y co-ordinates.
-
-coor = ulam_spiral(N,fname)
-[x,y] = ulam_spiral(N,fname)
-Will do the same as above. Additionally it will save a JPEG file having the
-name fname. The function doesn't require extension in the fname. Extension
-will be automatically added.
-
-Contact me if there is any bug or if you want to give any suggestion
--Tariqul Islam Ponir
-ponir(dot)bd @ hotmail(dot)com
-%}
+%Contact me if there is any bug or if you want to give any suggestion
+%-Tariqul Islam Ponir
+%ponir(dot)bd @ hotmail(dot)com
+%
 
 function [xpos,ypos] = ulam_spiral(N, fname)
     if length(N) ~= 1
