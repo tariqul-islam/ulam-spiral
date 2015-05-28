@@ -36,12 +36,12 @@ function [xpos,ypos] = ulam_spiral(N, fname)
     end
     
     if nargin == 2
-        A = uint8(zeros(N));
+        A = zeros(N);
         for i=1:1:len
-            A(xpos(1,i),xpos(2,i)) = 255;
+            A(xpos(1,i),xpos(2,i)) = 1;
         end
         fname = [fname '.jpg'];
-        imwrite(A,fname,'JPEG');
+        imwrite(rot90(A),fname,'JPEG');
     end
     
     if nargout == 2
